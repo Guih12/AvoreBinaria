@@ -137,7 +137,7 @@ void search(TREE *sTree, int element){
 }
 void bigElementRight(TREE *sTree){
     if(!empty(sTree->right)){
-        maiorElementRight(sTree->right);
+        bigElementRight(sTree->right);
     }
     else{
         visit(sTree);
@@ -146,7 +146,7 @@ void bigElementRight(TREE *sTree){
 
 void smallElementLeft(TREE *sTree){
     if(!empty(sTree->left)){
-        minorElementLeft(sTree->left);
+        smallElementLeft(sTree->left);
     }
     else{
         visit(sTree);
